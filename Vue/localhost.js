@@ -1,0 +1,1 @@
+export default{ host:'https://bibeklama.pythonanywhere.com' }
