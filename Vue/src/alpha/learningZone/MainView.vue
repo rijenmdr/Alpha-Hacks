@@ -1,11 +1,10 @@
 <template>
   <div class="main">
-
     <div class="div1">
       <Sidebar :number="number" />
     </div>
     <div class="div2">
-      <MainDash />
+      <router-view></router-view>
     </div>
     <div></div>
   </div>
@@ -26,8 +25,7 @@ export default {
   components: {
     MainDash,
     Sidebar
-  },
- 
+  }
 };
 </script>
 

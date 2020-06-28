@@ -23,7 +23,7 @@
                 <router-link to="/learnmore" class="mr-2">
                   <base-button class="mb-3 mb-sm-0" type="info">LEARN MORE</base-button>
                 </router-link>
-                <router-link to="/login">
+                <router-link to="/signup">
                   <base-button class="mb-3 mb-sm-0" type="white">GET STARTED</base-button>
                 </router-link>
               </div>

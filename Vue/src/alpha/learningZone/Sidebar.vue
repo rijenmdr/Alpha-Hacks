@@ -14,31 +14,31 @@
           <span class="nav-link-text">Topics</span>
         </li>
         <li class="nav-item">
-          <router-link to="/dashboard" class="nav-link">
+          <router-link to="/learnZone/sets" class="nav-link">
             <i class="fa fa-square" aria-hidden="true"></i>
 
-            <span class="nav-link-text">Chapter 1</span>
+            <span class="nav-link-text">SETS</span>
           </router-link>
         </li>
         <li class="nav-item">
           <router-link to="/dashboard" class="nav-link">
             <i class="fa fa-square" aria-hidden="true"></i>
 
-            <span class="nav-link-text">Chapter 2</span>
+            <span class="nav-link-text">TIME and WORK</span>
           </router-link>
         </li>
         <li class="nav-item">
           <router-link to="/dashboard" class="nav-link">
             <i class="fa fa-square" aria-hidden="true"></i>
 
-            <span class="nav-link-text">Chapter 3</span>
+            <span class="nav-link-text">TRIGONOMETRY</span>
           </router-link>
         </li>
         <li class="nav-item">
           <router-link to="/dashboard" class="nav-link">
             <i class="fa fa-square" aria-hidden="true"></i>
 
-            <span class="nav-link-text">Chapter 4</span>
+            <span class="nav-link-text">PROBABILITY</span>
           </router-link>
         </li>
       </ul>

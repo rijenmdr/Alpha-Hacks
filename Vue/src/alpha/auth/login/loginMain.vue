@@ -102,8 +102,8 @@
               </router-link>
             </div>
             <div class="col-6 text-right">
-              <router-link to="/signup" class="text-light">
-                <small>Create new account</small>
+              <router-link to="/teacherlogin" class="text-light">
+                <small>Login as teacher</small>
               </router-link>
             </div>
           </div>
@@ -146,7 +146,6 @@ export default {
       }
     },
     async onGoogleSignInSuccess(resp) {
-     
       await this.$store.dispatch("signupWithGoogle", resp);
       this.$router.push("/dashboard");
     },

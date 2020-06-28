@@ -2,13 +2,13 @@
   <div class="main-content" id="panel">
     <!-- Header -->
     <!-- Header -->
-    <button v-if="stats=='false'"
+    <div></div>
+    <button
       type="button"
       class="btn readmore"
       data-toggle="modal"
       data-target="#exampleModalLong"
     >Read More</button>
-    <div></div>
     <div class="container mb-5">
       <div class="container-fluid">
         <div class="container">
@@ -18,28 +18,35 @@
             <div class="col-md-6">
               <div class="pr-md-5">
                 <h3>Key Learnings</h3>
-                <p>In algebra, a quadratic equation is any equation that can be rearranged in standard form as where x represents an unknown, and a, b, and c represent known numbers, where a ≠ 0. If a = 0, then the equation is linear, not quadratic, as there is no term.</p>
+                <p>
+                  In mathematics set is defined as the collection of well defined object which can be separated distinctly.
+                  For instance,
+                  S = {2, 4, 6, 8} is collection of the even integers.
+                </p>
                 <ul class="list-unstyled mt-5">
                   <li class="py-2">
                     <div class="d-flex align-items-center">
-                      <h6
-                        class="mb-0"
-                      >The name Quadratic comes from "quad" meaning square, because the variable gets squared (like x2).</h6>
+                      <h6 class="mb-0">A set can be explained in different ways:</h6>
                     </div>
                   </li>
                   <li class="py-2">
                     <div class="d-flex align-items-center">
-                      <h6
-                        class="mb-0"
-                      >It is also called an "Equation of Degree 2" (because of the "2" on the x)</h6>
+                      <h6 class="mb-0">i. Listing method: A = {a, b, c, .z}</h6>
                     </div>
                   </li>
                   <li class="py-2">
                     <div class="d-flex align-items-center">
-                      <h6 class="mb-0">
-                        The Standard Form of a Quadratic Equation looks like this:
-                        Quadratic Equation: ax^2 + bx + c = 0
-                      </h6>
+                      <h6 class="mb-0">ii. Descriptive method: N = {the natural numbersfrom 1 to 50}</h6>
+                    </div>
+                  </li>
+                  <li class="py-2">
+                    <div class="d-flex align-items-center">
+                      <h6 class="mb-0">iii. Set builder method: A – B= A -(A∩ B )</h6>
+                    </div>
+                  </li>
+                  <li class="py-2">
+                    <div class="d-flex align-items-center">
+                      <h6 class="mb-0">iv. Venn – diagram</h6>
                     </div>
                   </li>
                 </ul>
@@ -47,7 +54,7 @@
             </div>
 
             <div class="col-lg-6 mt-5">
-              <iframe width="420" height="345" src="https://www.youtube.com/embed/1JsH0Up_5Hc"></iframe>
+              <iframe width="420" height="345" src="https://www.youtube.com/embed/hJgSUe1CTs4"></iframe>
             </div>
           </div>
         </div>
@@ -194,6 +201,124 @@
         </div>
       </div>
     </div>
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModalLong"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLongTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <h5>Universal sets</h5>
+            <p>A universal set is the collection of all objects in a particular context or theory. All other sets in that framework constitute subsets of the universal set, which is denoted as letter U. The objects themselves are known as elements or members of U.</p>
+            <h5>Subsets</h5>
+            <p>The set made by elements of the universal sets is called subsets of the universal sets
+            For example</p>
+            <p>U = {1, 2, 3, 4, …………..50}</p>
+            <p>A = {even integers from 1 to 50}</p>
+           <p> B= {odd numbers from 1 to 50}</p>
+           <p> Here, A and B are the subsets of U=</p>
+           <h5> Overlapping sets </h5>
+            <p>Two sets are said to be overlapped if they have same element in common.
+           <p> A∩ B = {6}
+            A and B are overlapping sets.
+            Disjoint sets
+            Two sets are said to be disjoint sets if there is no element in common.
+            Cardinality of the sets
+            The number of the elements in the given sets is known as cardinality of sets.</p>
+            A = {1, 2, 5,}
+            B = {5, 3, 4}
+            AUB = {1, 2, 3, 4, 5}
+            n(A) =3
+            n(B) = 3
+            n(AUB) = 5
+            Cardinality of the three sets
+            LetA and B and Crepresent threesets asa shown in the figure s
+            n(AUBUC) =n(A) + n(B) + n(C) - n(A∩ B) -- n(B∩ C) - n(C∩ A) +n(A∩ B∩ C)
+            Operation of sets
+            Union of sets
+            The set which includes elements of A and B is called union of the sets.
+            A = {1, 2, 5,}
+            B = {5, 3, 4}
+            AUB = {1, 2, 3, 4, 5}
+            Or, AUB= {x: xϵ A orxϵ B}
+            n(A) =3
+            n(B) = 3
+            n(AUB) = n(A) + n(B) - n(A∩ B)
+            = 3 +3 -1 = 5
+            Intersections of sets
+            If the elements of set belongs to both Sets A and B, it is called intersection of A and B.
+            A = {1, 2, 5}
+            B = {5, 3, 4}
+            A∩ B = {5}
+            n(A∩ B) = n(A) – n0 (A) = 3 -2 = 1
+            Or, A∩ B = {x: xϵ A and xϵ B}
+            Complement of sets
+            The set that contains all the elements of universal sets except the given set A is called complement of the set A . It is denoted by A̅
+            Difference of sets
+            If A and B are the two sets , the difference of the dsets is the elements of the set thst includes only in one set .
+            A – B= A -(A∩ B )
+            B- A= B-(A∩ B )
+            Example
+            Examples1
+            In a group of 200 students who like game, 120 like cricket game an 105 like football game. By drawing Venn diagram find
+            i. how many students like both the games ?
+            ii. How many students like only cricket?
+            Soln
+            n(U) = 200
+            C and F denote the students who study Cricket and football respectively.
+            n(C) =120
+            n(F) = 105
+            n( C ∩ F)=?
+            We have
+            n(CUF)=n(C) + n(F) -n(C∩ F)
+            200=120 + 105 -n(C∩ F)
+            n(C∩ F)= 25
+            n0(C) = n(C)-n( C ∩ F)= 120 – 25 = 95
+            Examples 2
+            In the certain examination, 50% students passed in account, 30% passed in English, 30% failed in both and 25 student passes in both subjects. By drawing Venn – diagram, find the number of the students who passes in account only.
+            Let total number be x A and E denotes the students who study account and English respectively
+            n(A) =50%
+            n(E) = 30%
+            n( A U E)c = 30%
+            n( A U E) = 25
+            We have
+            n(U)= n(A)+ n(E)+n(AUE)¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯ - n( A ∩E)
+            100%= 50 % + 30% + 30 % - n( A ∩E)
+            n( A ∩E) = 10%
+            According to the question,
+            10% of x = 25
+            x= 250
+            The number of the students who passed in accounts only = 40% of the 250 = 100
+            Examples 3
+            In a survey it was found that 8.%people like oranges ,85% like mangoes and 75% like both But 45 people like none of themDrawing Venn –diagram , find the number of the people whowere in the survey.
+            Soln:
+            Let O and M be the number of people who like oranges and mangoes respectively.
+            n (U) =n(OUM) + n(OUM)¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+            100%=n (O) + n (M) - n(O∩M) + n(OUM)¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+            100% =80% + 85% - 75% + n(OUM)¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+            n(OUM)¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯= 10%
+            According to the question,
+            10%of total number(say x)= 45
+            Or, x=450010 = 450</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+           
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- Page content -->
   </div>
 </template>
@@ -282,12 +407,6 @@ export default {
 .buttonCustom {
   margin-top: -20px;
 }
-.readmore {
-  position: absolute;
-  top: 80vh;
-  left: 23.2vw;
-  border: 1px solid black;
-}
 .text1 {
   font-size: 12px;
 }
@@ -323,5 +442,11 @@ export default {
 .button {
   margin-left: 60vw;
   margin-top: 9vh;
+}
+.readmore {
+  position: absolute;
+  top: 80vh;
+  left: 23.2vw;
+  border: 1px solid black;
 }
 </style>

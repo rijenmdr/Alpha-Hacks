@@ -7,7 +7,7 @@
             <div class="col-lg-4">
               <card class="border-0" hover shadow body-classes="py-5">
                 <icon name="ni ni-check-bold" type="primary" rounded class="mb-4"></icon>
-                <h6 class="text-primary text-uppercase">Digital Marketing</h6>
+                <h6 class="text-primary text-uppercase">Principle of Accounting</h6>
                 <p class="description mt-3">Created By : Saint Joseph School</p>
                 <div class="mt-3">
                   <badge type="primary" class="mr-3" rounded>Module : 20</badge>
@@ -19,7 +19,7 @@
             <div class="col-lg-4">
               <card class="border-0" hover shadow body-classes="py-5">
                 <icon name="ni ni-check-bold" type="success" rounded class="mb-4"></icon>
-                <h6 class="text-primary text-uppercase">Fundamental of Computing</h6>
+                <h6 class="text-primary text-uppercase">Mathematics</h6>
                 <p class="description mt-3">Created By : Saint Joseph School</p>
                 <div class="mt-3">
                   <badge type="primary" class="mr-3" rounded>Module : 10</badge>
@@ -38,7 +38,7 @@
             <div class="col-lg-4">
               <card class="border-0" hover shadow body-classes="py-5">
                 <icon name="ni ni-check-bold" type="primary" rounded class="mb-4"></icon>
-                <h6 class="text-primary text-uppercase">Machine Learning</h6>
+                <h6 class="text-primary text-uppercase">Science</h6>
                 <p class="description mt-3">Created By : Saint Joseph School</p>
                 <div class="mt-3">
                   <badge type="primary" class="mr-3" rounded>Module : 16</badge>

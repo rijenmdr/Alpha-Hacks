@@ -12,6 +12,8 @@ import SchoolLevel from "./alpha/courses/SchoolLevel";
 import PlusTwoLevel from "./alpha/courses/PlusTwoLevel";
 import BachelorLevel from "./alpha/courses/BachelorLevel";
 import learnZone from "./alpha/learningZone/MainView";
+import learnZoneView from "./alpha/learningZone/Main";
+import learnZoneViewSets from "./alpha/learningZone/sets";
 Vue.use(VueRouter);
 
 const routes = [
@@ -43,7 +45,14 @@ const routes = [
       { path: "bachelorlevel", component: BachelorLevel },
     ],
   },
-  { path: "/learnZone", component: learnZone },
+  {
+    path: "/learnZone",
+    component: learnZone,
+    children: [
+      { path: "", component: learnZoneView },
+      { path: "sets", component: learnZoneViewSets },
+    ],
+  },
 ];
 
 const router = new VueRouter({
