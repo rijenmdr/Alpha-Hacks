@@ -2,8 +2,8 @@
   <div class="main-content" id="panel">
     <!-- Header -->
     <!-- Header -->
-    <video autoplay="true" id="videoElement"></video>
-    <div class="container mainView">
+    <div></div>
+    <div class="container mb-5">
       <div class="container-fluid">
         <div class="container">
           <div v-if="stats!='present'" class="row mt-5"></div>
@@ -12,31 +12,28 @@
             <div class="col-md-6">
               <div class="pr-md-5">
                 <h3>Key Learnings</h3>
-                <p>
-                  An online business strategy can boost your chances of digital success, helping you to define clear goals and focus your online activity. In this lesson, we'll explore:
-                  how an online business can benefit from a business strategy
-                  best practices when creating a business strategy
-                  examples of common goals and popular strategies to achieve them.
-                </p>
+                <p>In algebra, a quadratic equation is any equation that can be rearranged in standard form as where x represents an unknown, and a, b, and c represent known numbers, where a ≠ 0. If a = 0, then the equation is linear, not quadratic, as there is no term.</p>
                 <ul class="list-unstyled mt-5">
                   <li class="py-2">
                     <div class="d-flex align-items-center">
-                      <badge type="success" circle class="mr-3" icon="fa fa-arrow-right"></badge>
-                      <h6 class="mb-0">how an online business can benefit from a business strategy</h6>
-                    </div>
-                  </li>
-                  <li class="py-2">
-                    <div class="d-flex align-items-center">
-                      <badge type="success" circle class="mr-3" icon="fa fa-arrow-right"></badge>
-                      <h6 class="mb-0">best practices when creating a business strategy</h6>
-                    </div>
-                  </li>
-                  <li class="py-2">
-                    <div class="d-flex align-items-center">
-                      <badge type="success" circle class="mr-3" icon="fa fa-arrow-right"></badge>
                       <h6
                         class="mb-0"
-                      >examples of common goals and popular strategies to achieve them.</h6>
+                      >The name Quadratic comes from "quad" meaning square, because the variable gets squared (like x2).</h6>
+                    </div>
+                  </li>
+                  <li class="py-2">
+                    <div class="d-flex align-items-center">
+                      <h6
+                        class="mb-0"
+                      >It is also called an "Equation of Degree 2" (because of the "2" on the x)</h6>
+                    </div>
+                  </li>
+                  <li class="py-2">
+                    <div class="d-flex align-items-center">
+                      <h6 class="mb-0">
+                        The Standard Form of a Quadratic Equation looks like this:
+                        Quadratic Equation: ax^2 + bx + c = 0
+                      </h6>
                     </div>
                   </li>
                 </ul>
@@ -44,7 +41,7 @@
             </div>
 
             <div class="col-lg-6 mt-5">
-              <iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+              <iframe width="420" height="345" src="https://www.youtube.com/embed/1JsH0Up_5Hc"></iframe>
             </div>
           </div>
         </div>
@@ -52,43 +49,36 @@
     </div>
     <div v-if="stats=='present'" class="header bg-primary pb-0">
       <div class="row">
-        <div class="col-xl-3 col-md-6 mt-3 margin">
+        <div class="col-xl-7 col-md-6 mt-3 mb-3 margin">
           <div class="card card-stats">
             <!-- Card body -->
             <div class="card-body">
               <div class="row">
                 <div class="col">
-                  <h5 class="card-title text-uppercase text-muted mb-0">Total Web Visits</h5>
-                  <span class="h2 font-weight-bold mb-0">900</span>
+                  <h5 class="card-title text-uppercase text-muted mb-0">Recommendations :</h5>
                 </div>
                 <div class="col-auto"></div>
               </div>
-              <p class="mt-3 mb-0 text-sm">
-                <span class="text-success mr-2">3.48%</span>
-                <span class="text-nowrap">Since last month</span>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-xl-3 col-md-6 mt-3 ml-5">
-          <div class="card card-stats">
-            <!-- Card body -->
-            <div class="card-body">
-              <div class="row">
-                <div class="col">
-                  <h6 class="card-title text-uppercase text-muted mb-0">Contentration Level</h6>
-                  <span class="h2 font-weight-bold mb-0">20%</span>
-                </div>
-                <div class="col-auto"></div>
+              <div>
+                <a target="_blank" class="mt-3 mb-0 text-sm">https://en.wikipedia.org/wiki/Nepal</a>
               </div>
-              <p class="mt-3 mb-0 text-sm">
-                <span class="text-success mr-2">3.48%</span>
-                <span class="text-nowrap">Since last month</span>
-              </p>
+              <div>
+                <a
+                  target="_blank"
+                  class="mt-3 mb-0 text-sm"
+                >https://www.youtube.com/watch?v=3YTo6Oa1XcY</a>
+              </div>
+              <div>
+                <a
+                  target="_blank"
+                  class="mt-3 mb-0 text-sm"
+                >https://www.youtube.com/watch?v=3YTo6Oa1XcY</a>
+              </div>
             </div>
           </div>
         </div>
-        <div class="col-xl-3 col-md-6 ml-5">
+
+        <div class="col-xl-3 col-md-6 ml-5 mt-1">
           <div class="card card-stats">
             <!-- Card body -->
             <div class="card-body">
@@ -111,14 +101,14 @@
         data-target="#entermonitormode"
       >Enter Monitor Mode</base-button>
     </div>
-    <div v-else class="buttondisable">
+    <div v-else class="buttonchat">
       <base-button
         tag="button"
         type="primary"
         class="mt-4"
         data-toggle="modal"
-        data-target="#disablemonitormode"
-      >Disable Monitor Mode</base-button>
+        data-target="#chat"
+      >Any Questions ?</base-button>
     </div>
     <!-- Modal -->
     <div
@@ -172,22 +162,36 @@
         </div>
       </div>
     </div>
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="chat"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalCenterTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Enter Your Querry..</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <textarea rows="5" cols="50"></textarea>
+          </div>
+          <div class="modal-footer">
+            <button data-dismiss="modal" type="button" class="btn btn-primary">OK</button>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- Page content -->
   </div>
 </template>
 <script>
-var video = document.querySelector("#videoElement");
-
-if (navigator.mediaDevices.getUserMedia) {
-  navigator.mediaDevices
-    .getUserMedia({ video: true })
-    .then(function(stream) {
-      video.srcObject = stream;
-    })
-    .catch(function(err0r) {
-      console.log("Something went wrong!");
-    });
-}
 </script>
 <script>
 import axios from "axios";
@@ -200,11 +204,35 @@ export default {
   created() {
     if (this.$route.query.monitormode == "true") {
       this.stats = "present";
+      var video = document.querySelector("#videoElement");
+
+      if (navigator.mediaDevices.getUserMedia) {
+        navigator.mediaDevices
+          .getUserMedia({ video: true })
+          .then(function(stream) {
+            video.srcObject = stream;
+          })
+          .catch(function(err0r) {
+            console.log("Something went wrong!");
+          });
+      }
     }
   },
   methods: {
     YES() {
       this.stats = "present";
+      var video = document.querySelector("#videoElement");
+
+      if (navigator.mediaDevices.getUserMedia) {
+        navigator.mediaDevices
+          .getUserMedia({ video: true })
+          .then(function(stream) {
+            video.srcObject = stream;
+          })
+          .catch(function(err0r) {
+            console.log("Something went wrong!");
+          });
+      }
     },
     DISYES() {
       this.stats = "false";
@@ -251,10 +279,13 @@ export default {
 .text1 {
   font-size: 12px;
 }
-.buttondisable {
+.buttonchat {
   position: absolute;
-  top: 62vh;
-  left: 78.7vw;
+  top: 67vh;
+  left: 82.6vw;
+}
+.mainView {
+  margin-top: -24vh;
 }
 .premium {
   border: 1px solid #cacfc9;

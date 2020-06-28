@@ -55,7 +55,7 @@
                   type="email"
                   name="email"
                   id="email"
-                  placeholder="Your School Name"
+                  placeholder="Associated School Name"
                 />
               </div>
               <div class="form-group" :class="{invalid:$v.password1.$error}">
@@ -68,22 +68,10 @@
                   type="password"
                   name="pass"
                   id="pass"
-                  placeholder="Grade"
+                  placeholder="Teacher Id"
                 />
               </div>
-              <div class="form-group" :class="{invalid:$v.password2.$error}">
-                <label for="re-pass">
-                  <i class="fa fa-sort-numeric-desc" aria-hidden="true"></i>
-                </label>
-                <input
-                  type="password"
-                  name="re_pass"
-                  @blur="$v.password2.$touch()"
-                  v-model="password2"
-                  id="re_pass"
-                  placeholder="Roll No"
-                />
-              </div>
+
               <div class="form-group" :class="{invalid:$v.password2.$error}">
                 <label for="re-pass">
                   <i class="fas fa-user-lock"></i>
@@ -120,7 +108,6 @@
               <img src="../../../assets/signup-image.jpg" alt="sing up image" />
             </figure>
             <router-link to="/login" class="signup-image-link">I am already member</router-link>
-            <router-link to="/signupteacher" class="signup-image-link mt-3">Register As Teacher</router-link>
           </div>
         </div>
       </div>

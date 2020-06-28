@@ -4,6 +4,7 @@ import Home from "./alpha/Landing";
 import Login from "./alpha/auth/login/login";
 import LoginMain from "./alpha/auth/login/loginMain";
 import SignUpMain from "./alpha/auth/signup/signup";
+import SignUpMainTeacher from "./alpha/auth/signup/signupteacher";
 import Dashboard from "./alpha/courses/dashboard";
 
 import Recent from "./alpha/courses/Recent";
@@ -27,6 +28,10 @@ const routes = [
   {
     path: "/signup",
     component: SignUpMain,
+  },
+  {
+    path: "/signupteacher",
+    component: SignUpMainTeacher,
   },
   {
     path: "/dashboard",

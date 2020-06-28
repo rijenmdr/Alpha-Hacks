@@ -17,31 +17,9 @@
           <router-link to="/dashboard" class="nav-link">
             <i class="fa fa-square" aria-hidden="true"></i>
 
-            <span class="nav-link-text">Popular Courses</span>
+            <span class="nav-link-text">Recents</span>
           </router-link>
         </li>
-        <li class="nav-item">
-          <router-link to="/dashboard/schoollevel" class="nav-link">
-            <i class="fa fa-square" aria-hidden="true"></i>
-
-            <span class="nav-link-text">School Level</span>
-          </router-link>
-        </li>
-
-        <li v-if="number<=1 || paidUser" class="nav-item">
-          <router-link to="/dashboard/plustwolevel" class="nav-link">
-            <i class="fa fa-square" aria-hidden="true"></i>
-
-            <span class="nav-link-text">+2 Level</span>
-          </router-link>
-        </li>
-        <li v-else class="nav-item">
-          <router-link v-if="!paidUser" to="/upgradetopro" class="nav-link">
-            <i class="fas fa-edit text-success"></i>
-            <span class="nav-link-text">Upgrate to Create</span>
-          </router-link>
-        </li>
-
         <li class="nav-item">
           <router-link to="/dashboard/bachelorlevel" class="nav-link">
             <i class="fa fa-square" aria-hidden="true"></i>
@@ -49,37 +27,32 @@
             <span class="nav-link-text">Bachelor</span>
           </router-link>
         </li>
+        <li v-if="number<=1 || paidUser" class="nav-item">
+          <router-link to="/dashboard/plustwolevel" class="nav-link">
+            <i class="fa fa-square" aria-hidden="true"></i>
+
+            <span class="nav-link-text">+2 Level</span>
+          </router-link>
+        </li>
+        <li class="nav-item">
+          <router-link to="/dashboard/schoollevel" class="nav-link">
+            <i class="fa fa-square" aria-hidden="true"></i>
+
+            <span class="nav-link-text">Class 10</span>
+          </router-link>
+        </li>
 
         <li class="nav-item">
           <router-link to="/dashboard/feedback" class="nav-link">
             <i class="fa fa-square" aria-hidden="true"></i>
 
-            <span class="nav-link-text">Career Development</span>
+            <span class="nav-link-text">Class 9</span>
           </router-link>
         </li>
         <li class="nav-item">
           <div class="nav-link" data-toggle="modal" data-target="#profile">
-            <i class="ni ni-single-02 text-yellow"></i>
-            <span class="nav-link-text">Public Speaking</span>
-          </div>
-        </li>
-        <li v-if="!paidUser" class="nav-item">
-          <router-link class="nav-link" to="/upgradetopro">
-            <i class="ni ni-send text-dark"></i>
-            <span class="nav-link-text">Upgrade</span>
-          </router-link>
-        </li>
-        <li v-if="paidUser" class="nav-item" data-toggle="modal" data-target="#modalProUser">
-          <router-link to="/dashboard/protemplates" class="nav-link">
-            <i class="fa fa-pencil-square text-primary" aria-hidden="true"></i>
-            <span class="nav-link-text">Pro Template</span>
-          </router-link>
-        </li>
-
-        <li v-if="paidUser" class="nav-item">
-          <div class="nav-link" data-toggle="modal" data-target="#customTemplates">
-            <i class="fas fa-edit"></i>
-            <span class="nav-link-text">Custom Templates</span>
+            <i class="fa fa-square" aria-hidden="true"></i>
+            <span class="nav-link-text">Class 8</span>
           </div>
         </li>
       </ul>

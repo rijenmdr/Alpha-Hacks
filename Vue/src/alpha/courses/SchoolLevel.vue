@@ -8,36 +8,43 @@
               <card class="border-0" hover shadow body-classes="py-5">
                 <icon name="ni ni-check-bold" type="primary" rounded class="mb-4"></icon>
                 <h6 class="text-primary text-uppercase">Digital Marketing</h6>
-                <p class="description mt-3">Created By : Alpha Team</p>
+                <p class="description mt-3">Created By : Saint Joseph School</p>
                 <div class="mt-3">
                   <badge type="primary" class="mr-3" rounded>Module : 20</badge>
                   <badge type="primary" rounded>Hours : 10</badge>
                 </div>
-                <base-button tag="a" href="#" type="primary" class="mt-4">Join Now</base-button>
+                <base-button tag="div" @click="joinNow" type="primary" class="mt-4">Join Now</base-button>
               </card>
             </div>
             <div class="col-lg-4">
               <card class="border-0" hover shadow body-classes="py-5">
                 <icon name="ni ni-check-bold" type="success" rounded class="mb-4"></icon>
                 <h6 class="text-primary text-uppercase">Fundamental of Computing</h6>
-                <p class="description mt-3">Created By : Alpha Team</p>
+                <p class="description mt-3">Created By : Saint Joseph School</p>
                 <div class="mt-3">
-                  <badge type="primary" class="mr-3" rounded>Module : 20</badge>
-                  <badge type="primary" rounded>Hours : 10</badge>
+                  <badge type="primary" class="mr-3" rounded>Module : 10</badge>
+                  <badge type="primary" rounded>Hours : 5</badge>
                 </div>
-                <base-button tag="a" href="#" type="primary" class="mt-4">Join Now</base-button>
+
+                <base-button
+                  tag="button"
+                  type="primary"
+                  class="mt-4"
+                  data-toggle="modal"
+                  data-target="#monitormode"
+                >Join Now</base-button>
               </card>
             </div>
             <div class="col-lg-4">
               <card class="border-0" hover shadow body-classes="py-5">
                 <icon name="ni ni-check-bold" type="primary" rounded class="mb-4"></icon>
                 <h6 class="text-primary text-uppercase">Machine Learning</h6>
-                <p class="description mt-3">Created By : Alpha Team</p>
+                <p class="description mt-3">Created By : Saint Joseph School</p>
                 <div class="mt-3">
-                  <badge type="primary" class="mr-3" rounded>Module : 20</badge>
-                  <badge type="primary" rounded>Hours : 10</badge>
+                  <badge type="primary" class="mr-3" rounded>Module : 16</badge>
+                  <badge type="primary" rounded>Hours : 7</badge>
                 </div>
-                <base-button tag="a" href="#" type="primary" class="mt-4">Join Now</base-button>
+                <base-button tag="div" @click="joinNow" type="primary" class="mt-4">Join Now</base-button>
               </card>
             </div>
           </div>
@@ -46,6 +53,21 @@
     </div>
   </section>
 </template>
+<script>
+export default {
+  methods: {
+    YES() {
+      this.$router.push("/learnZone?monitormode='true");
+    },
+    joinNow() {
+      this.$router.push("/learnZone?monitormode='true");
+    },
+    NO() {
+      this.$router.push("/learnZone?monitormode='false");
+    }
+  }
+};
+</script>
 <style scoped>
 .courses {
   margin-top: 33vh;
@@ -53,9 +75,8 @@
 .description {
   display: inline;
 }
-.coursesList{
+.coursesList {
   justify-content: space-between;
   width: 75vw;
 }
-
 </style>
